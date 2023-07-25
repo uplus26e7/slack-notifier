@@ -1,0 +1,29 @@
+[project]
+name = "slack-notifier"
+version = "0.1.0"
+description = "Add a short description here"
+authors = [
+    { name = "Yuya Shintani", email = "yuya.shintani.uplus26e7@gmail.com" }
+]
+dependencies = [
+    "typer~=0.9.0",
+    "python-dotenv~=1.0.0",
+    "slack_bolt~=1.18.0",
+    "requests~=2.31.0",
+]
+readme = "README.md"
+requires-python = ">= 3.8"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = [
+    "black~=23.3.0",
+    "isort~=5.12.0",
+]
+
+[tool.hatch.metadata]
+allow-direct-references = true
